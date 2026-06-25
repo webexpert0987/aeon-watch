@@ -11,9 +11,6 @@ const parts = [
 ]
 
 export default function ExplodedView() {
-  const cx = 50
-  const cy = 50
-
   return (
     <section
       style={{

@@ -20,7 +20,7 @@ export default function TypographyScene() {
 
     const ctx = gsap.context(() => {
       const wordEls = sectionRef.current?.querySelectorAll('[data-word]')
-      wordEls?.forEach((el, i) => {
+      wordEls?.forEach((el) => {
         const split = new SplitType(el as HTMLElement, { types: 'chars' })
         gsap.fromTo(
           split.chars,
@@ -86,7 +86,7 @@ export default function TypographyScene() {
         }}
       />
 
-      {words.map((word, i) => (
+      {words.map((word) => (
         <div
           key={word.text}
           data-word-container

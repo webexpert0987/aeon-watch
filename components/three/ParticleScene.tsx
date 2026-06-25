@@ -5,15 +5,13 @@ import * as THREE from 'three'
 
 function Particles({
   count = 2000,
-  progress = 0,
 }: {
   count?: number
-  progress?: number
 }) {
   const mesh = useRef<THREE.Points>(null)
   const time = useRef(0)
 
-  const [positions, velocities] = useMemo(() => {
+  const [positions] = useMemo(() => {
     const pos = new Float32Array(count * 3)
     const vel = new Float32Array(count * 3)
     for (let i = 0; i < count; i++) {
@@ -60,11 +58,9 @@ function Particles({
 
 export default function ParticleScene({
   count = 2000,
-  progress = 0,
   className = '',
 }: {
   count?: number
-  progress?: number
   className?: string
 }) {
   return (
@@ -75,7 +71,7 @@ export default function ParticleScene({
         onCreated={({ gl }) => gl.setClearColor(0x000000, 0)}
         style={{ background: 'transparent' }}
       >
-        <Particles count={count} progress={progress} />
+        <Particles count={count} />
       </Canvas>
     </div>
   )

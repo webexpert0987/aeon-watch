@@ -1,5 +1,4 @@
 'use client'
-import { useRef } from 'react'
 import { motion } from 'framer-motion'
 
 const techNodes = [
@@ -81,7 +80,7 @@ export default function TechnologySection() {
             Intelligence<br /><em style={{ color: '#c8a97a', fontStyle: 'italic' }}>woven</em> into<br />mechanism
           </h2>
           <p style={{ fontFamily: 'var(--font-syne)', fontSize: '15px', lineHeight: 1.9, color: 'rgba(238,234,228,0.5)', marginBottom: '48px' }}>
-            AEON's proprietary AI core monitors 47 parameters — temperature, altitude, wear pattern, magnetic field — updating the regulation spring 128 times per second.
+            AEON&apos;s proprietary AI core monitors 47 parameters — temperature, altitude, wear pattern, magnetic field — updating the regulation spring 128 times per second.
           </p>
 
           <div style={{ display: 'flex', gap: '48px' }}>

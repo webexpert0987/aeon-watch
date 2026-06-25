@@ -1,7 +1,5 @@
 'use client'
-import { useRef, useEffect } from 'react'
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { useRef } from 'react'
 import { motion, useMotionValue, useSpring } from 'framer-motion'
 
 const features = [
